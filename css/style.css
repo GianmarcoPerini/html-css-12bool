@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh
+}
+
+[class^=col-]{
+    background-color: pink;
+    border: 1px solid black;
+    line-height: 140px;
+    text-align: center;
+}
+
+.nasted{
+    display: flex;
+    padding: 3px;
+}
+
+.nasted > [class^=col-]{
+    height: 100%;
+    background-color: salmon;
+    border: none;
+    margin: 0 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal
+}
+
+.row{
+    height: 20%
+}
